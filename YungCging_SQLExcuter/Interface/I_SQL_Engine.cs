@@ -19,6 +19,9 @@ namespace YungCging_SQLExcuter.Interface
         DataSet_ExcuteResult Set_SQL_Parameter();
         DataSet_ExcuteResult Excute_SQL_Request();
 
+        void ExcuteNonQuery();
+        void ExecuteReader();
+
         SqlCommand SQL_Command { get; set; } 
         
 
