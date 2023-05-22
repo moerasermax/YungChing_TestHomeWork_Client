@@ -11,6 +11,7 @@ namespace YungChing_TestHomeWork_Client.DataSet
         CREATEUSER,
         DELETEUSER,
         UPDATEUSER,
-        READUSER
+        READUSER,
+        FAIL
     }
 }

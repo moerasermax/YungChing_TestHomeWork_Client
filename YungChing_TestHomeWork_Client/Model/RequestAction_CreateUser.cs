@@ -17,7 +17,6 @@ namespace YungChing_TestHomeWork_Client.Model
         {
             if(UserData != null)
             {
-                Action_Flow = Enum_Action.CREATEUSER;
                 return string.Format("{0}..Split..{1}..Split..{2}", Enum_Action.CREATEUSER, "INSERT INTO [YungChing_TestHomework].[dbo].[User] VALUES(@Account,@Password,@Name,@Age);", JsonConvert.SerializeObject(UserData));
             }
             else
@@ -25,6 +24,10 @@ namespace YungChing_TestHomeWork_Client.Model
                 throw new Exception("請設置 UserData");
             }
 
+        }
+        public RequestAction_CreateUser()
+        {
+            Action_Flow = Enum_Action.CREATEUSER;
         }
     }
 }

@@ -24,7 +24,7 @@ namespace YungChing_TestHomeWork_Client.Model
         public void Get_FileBytePack()
         {
             this.Receive_Result = this.Receive_Result.Replace("\0", "");
-            string reponse =Regex.Split(this.Receive_Result, "..Split..")[2] ?? "";
+            string reponse =Regex.Split(this.Receive_Result, "..Split..")[2];
             Result.Data_Buffer = Encoding.UTF8.GetBytes(reponse);
         }
         public string Get_FeedBackMessage()
@@ -42,15 +42,14 @@ namespace YungChing_TestHomeWork_Client.Model
             switch (this.Action_Flow)
             {
                 case Enum_Action.CREATEUSER:
-                    Process_Object.FileBytesbuffer = Result.Data_Buffer;
                     return Process_Object.Excute_Specific_Method();
                 case Enum_Action.DELETEUSER:
-                    Process_Object.FeedBackMessage = Get_FeedBackMessage();
-                    Process_Object.FileBytesbuffer = Result.Data_Buffer;
                     return Process_Object.Excute_Specific_Method();
                 case Enum_Action.READUSER:
                     return Process_Object.Excute_Specific_Method();
                 case Enum_Action.UPDATEUSER:
+                    return Process_Object.Excute_Specific_Method();
+                case Enum_Action.FAIL:
                     result.Success = false;
                     result.FeedBackMessage = "Can't find Action_Flow";
                     break;

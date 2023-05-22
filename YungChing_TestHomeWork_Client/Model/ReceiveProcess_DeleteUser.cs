@@ -15,8 +15,18 @@ namespace YungChing_TestHomeWork_Client.Model
     {
         public override DataSet_ExcuteResult Excute_Specific_Method()
         {
-            throw (new NotImplementedException());
-
+            DataSet_ExcuteResult result = new DataSet_ExcuteResult();
+            try
+            {
+                result.Success = true;
+                result.FeedBackMessage = Deserialization_Result.getInstance().Get_FeedBackMessage();
+            }
+            catch (Exception ex)
+            {
+                result.Success = false;
+                result.FeedBackMessage = ex.Message;
+            }
+            return result;
         }
     }
 }
