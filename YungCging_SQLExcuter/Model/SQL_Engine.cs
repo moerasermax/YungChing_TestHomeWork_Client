@@ -108,8 +108,7 @@ namespace YungCging_SQLExcuter.Model
             {
                 result.FeedBackMessage = "[SQL引擎]SQL執行失敗";
             }
-
-            throw new NotImplementedException();
+            return result;
         }
 
         public void Init_result()

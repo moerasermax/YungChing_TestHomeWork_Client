@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\SQLEngine_Controller.cs" />
     <Compile Include="DataSet\DataSet_ExcuteResult.cs" />
     <Compile Include="DataSet\DataSet_User_CRUD.cs" />
     <Compile Include="DataSet\Enum_Action.cs" />
@@ -62,6 +63,9 @@
     <Compile Include="Model\SQL_Engine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
