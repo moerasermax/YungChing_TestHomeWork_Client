@@ -72,14 +72,17 @@ namespace YungChing_TestHomeWork_Client.Controller
                     case Enum_Action.READUSER:
                         return Send_Request_Command(RequestAction_Object);
                     case Enum_Action.UPDATEUSER:
-                        result.Success = false;
-                        result.FeedBackMessage = "Can't find Action_Flow";
-                        break;
+                        return Send_Request_Command(RequestAction_Object);
                     default:
                         result.Success = false;
                         result.FeedBackMessage = "Can't find Action_Flow";
                         break;
                 }
+
+                /// 為了除錯採用這個流程，優化如下：
+                /// return Send_Request_Command(RequestAction_Object);
+                /// result.Success = false;
+                /// result.FeedBackMessage = "Can't find Action_Flow";
             }
             else
             {

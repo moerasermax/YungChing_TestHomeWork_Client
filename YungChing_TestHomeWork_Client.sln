@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YungChing_TestHomeWork_Clie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YungChing_TestHomeWork_Test", "YungChing_TestHomeWork_Test\YungChing_TestHomeWork_Test.csproj", "{033A1DDC-6C78-44CC-8BE3-2D0DBB808550}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YungCging_SQLExcuter", "YungCging_SQLExcuter\YungCging_SQLExcuter.csproj", "{0B4DEEFF-4ADB-4044-A752-64B042EC4991}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{033A1DDC-6C78-44CC-8BE3-2D0DBB808550}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{033A1DDC-6C78-44CC-8BE3-2D0DBB808550}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{033A1DDC-6C78-44CC-8BE3-2D0DBB808550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4DEEFF-4ADB-4044-A752-64B042EC4991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4DEEFF-4ADB-4044-A752-64B042EC4991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4DEEFF-4ADB-4044-A752-64B042EC4991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4DEEFF-4ADB-4044-A752-64B042EC4991}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

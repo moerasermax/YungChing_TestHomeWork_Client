@@ -66,6 +66,7 @@ namespace YungChing_TestHomeWork_Client.Model
                 throw new Exception("發送 指令 錯誤 \r\n 原因："+ex.Message);
             }
             return result;
+
         }
         public byte[] CommandToByte(string command)
         {

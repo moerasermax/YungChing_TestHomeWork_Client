@@ -31,5 +31,4 @@ namespace YungChing_TestHomeWork_Client.Model
             }
         }
     }
-    }
 }
