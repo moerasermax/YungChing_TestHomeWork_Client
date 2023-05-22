@@ -9,7 +9,7 @@ namespace YungChing_TestHomeWork_Client.DataSet
     public enum Enum_Action
     {
         CREATEUSER,
-        REMOVEUSER,
+        DELETEUSER,
         UPDATEUSER,
         READUSER
     }

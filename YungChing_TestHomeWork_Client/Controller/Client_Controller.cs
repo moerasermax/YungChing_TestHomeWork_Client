@@ -65,9 +65,9 @@ namespace YungChing_TestHomeWork_Client.Controller
             {
                 switch (RequestAction_Object.Action_Flow)
                 {
-                    case Enum_Action.ADDUSER:
+                    case Enum_Action.CREATEUSER:
                         return Send_Request_Command(RequestAction_Object);
-                    case Enum_Action.REMOVEUSER:
+                    case Enum_Action.DELETEUSER:
                         return Send_Request_Command(RequestAction_Object);
                     case Enum_Action.READUSER:
                         return Send_Request_Command(RequestAction_Object);
@@ -131,15 +131,13 @@ namespace YungChing_TestHomeWork_Client.Controller
             switch (Deserialization_Result.getInstance().Action_Flow)
             {
                 case Enum_Action.CREATEUSER:
-                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_GetFilesInCurrentFolder());
-                case Enum_Action.REMOVEUSER:
-                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_DownloadFile());
+                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_ReadUser());
+                case Enum_Action.DELETEUSER:
+                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_UpdateUser());
                 case Enum_Action.READUSER:
-                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_CloseConnect());
+                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_CreateUser());
                 case Enum_Action.UPDATEUSER:
-                    result.Success = false;
-                    result.FeedBackMessage = "Can't find Action_Flow";
-                    break;
+                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_CreateUser());
                 default:
                     result.Success = false;
                     result.FeedBackMessage = "Can't find Action_Flow";

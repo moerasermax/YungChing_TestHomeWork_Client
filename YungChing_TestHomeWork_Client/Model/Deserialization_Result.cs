@@ -43,7 +43,7 @@ namespace YungChing_TestHomeWork_Client.Model
                 case Enum_Action.CREATEUSER:
                     Process_Object.FileBytesbuffer = Result.Data_Buffer;
                     return Process_Object.Excute_Specific_Method();
-                case Enum_Action.REMOVEUSER:
+                case Enum_Action.DELETEUSER:
                     Process_Object.FeedBackMessage = Get_FeedBackMessage();
                     Process_Object.FileBytesbuffer = Result.Data_Buffer;
                     return Process_Object.Excute_Specific_Method();

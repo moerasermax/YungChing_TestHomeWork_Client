@@ -51,6 +51,9 @@
     <Compile Include="Controller\Client_Controller.cs" />
     <Compile Include="DataSet\DataSet_ExcuteResult.cs" />
     <Compile Include="DataSet\Enum_Action.cs" />
+    <Compile Include="Model\ReceiveProcess_DeleteUser.cs" />
+    <Compile Include="Model\ReceiveProcess_ReadUser.cs" />
+    <Compile Include="Model\RequestAction_ReadUser.cs" />
     <Compile Include="YungChing_TestHomeWork_Client_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,12 +65,11 @@
     <Compile Include="Interface\I_Request_Action.cs" />
     <Compile Include="Interface\I_Request.cs" />
     <Compile Include="Model\Deserialization_Result.cs" />
-    <Compile Include="Model\ReceiveProcess_CloseConnect.cs" />
-    <Compile Include="Model\ReceiveProcess_DownloadFile.cs" />
-    <Compile Include="Model\ReceiveProcess_GetFilesInCurrentFolder.cs" />
+    <Compile Include="Model\ReceiveProcess_CreateUser.cs" />
+    <Compile Include="Model\ReceiveProcess_UpdateUser.cs" />
     <Compile Include="Model\RequestAction_CreateUser.cs" />
-    <Compile Include="Model\RequestAction_DownloadFile.cs" />
-    <Compile Include="Model\RequestAction_GetServerFilesFolderFilesName.cs" />
+    <Compile Include="Model\RequestAction_DeleteUser.cs" />
+    <Compile Include="Model\RequestAction_UpdateUser.cs" />
     <Compile Include="Model\Request.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

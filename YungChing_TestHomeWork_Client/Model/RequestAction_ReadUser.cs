@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using YungChing_TestHomeWork_Client.Abstract;
-using YungChing_TestHomeWork_Client.DataSet;
 
 namespace YungChing_TestHomeWork_Client.Model
 {
-    public class ReceiveProcess_CloseConnect : Receive_Process
+    public class RequestAction_ReadUser : Request_Action
     {
-        public override DataSet_ExcuteResult Excute_Specific_Method()
+        public override string Get_Reqeust_Command()
         {
-            throw (new NotImplementedException());
-
+            throw(new NotImplementedException());
         }
     }
 }

@@ -68,7 +68,7 @@ namespace YungChing_TestHomeWork_Client
         {
             try
             {
-                DataSet_ExcuteResult result = Client_Controller.getInstance().Request_Action(new RequestAction_DownloadFile() { Content = Request_FileName_Textbox.Text});
+                DataSet_ExcuteResult result = Client_Controller.getInstance().Request_Action(new RequestAction_DeleteUser() { Content = Request_FileName_Textbox.Text});
                 if (result.Success)
                 {
                     result = Client_Controller.getInstance().Receive_ResponseRsult();
@@ -133,7 +133,7 @@ namespace YungChing_TestHomeWork_Client
         {
             try
             {
-                DataSet_ExcuteResult result = Client_Controller.getInstance().Request_Action(new RequestAction_GetServerFilesFolderFilesName());
+                DataSet_ExcuteResult result = Client_Controller.getInstance().Request_Action(new RequestAction_UpdateUser());
                 if (result.Success)
                 {
                     result = Client_Controller.getInstance().Receive_ResponseRsult();
@@ -154,7 +154,7 @@ namespace YungChing_TestHomeWork_Client
         {
             try
             {
-                DataSet_ExcuteResult result = Client_Controller.getInstance().Request_Action(new RequestAction_DownloadFile() { Content = "test.txt" });
+                DataSet_ExcuteResult result = Client_Controller.getInstance().Request_Action(new RequestAction_DeleteUser() { Content = "test.txt" });
                 result = Client_Controller.getInstance().Receive_ResponseRsult();
                 if (result.Success)
                 {

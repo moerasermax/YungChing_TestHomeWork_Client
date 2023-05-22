@@ -11,7 +11,7 @@ using YungChing_TestHomeWork_Client.DataSet;
 
 namespace YungChing_TestHomeWork_Client.Model
 {
-    public class ReceiveProcess_DownloadFile : Receive_Process
+    public class ReceiveProcess_ReadUser : Receive_Process
     {
         public override DataSet_ExcuteResult Excute_Specific_Method()
         {

@@ -1,19 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using YungChing_TestHomeWork_Client.Abstract;
-using YungChing_TestHomeWork_Client.Controller;
+using YungChing_TestHomeWork_Client.DataSet;
 
 namespace YungChing_TestHomeWork_Client.Model
 {
-    public class RequestAction_CreateUser : Request_Action
+    public class ReceiveProcess_GetFilesInCurrentFolder : Receive_Process
     {
-        
-        public override string Get_Reqeust_Command()
+        public override DataSet_ExcuteResult Excute_Specific_Method()
         {
             throw (new NotImplementedException());
+
         }
     }
 }
