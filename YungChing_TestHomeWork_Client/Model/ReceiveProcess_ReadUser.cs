@@ -13,7 +13,7 @@ namespace YungChing_TestHomeWork_Client.Model
 {
     public class ReceiveProcess_ReadUser : Receive_Process
     {
-        public override DataSet_ExcuteResult Excute_Specific_Method()
+        public override DataSet_ExcuteResult Excute_Specific_Method(DataSet_User_CRUD UserData)
         {
             throw (new NotImplementedException());
 

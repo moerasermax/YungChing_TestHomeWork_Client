@@ -11,6 +11,6 @@ namespace YungChing_TestHomeWork_Client.Interface
     {
         Enum_Action Action_Flow { get; set; }
         string Content { get; set; }
-        string Get_Reqeust_Command();
+        string Get_Reqeust_Command(DataSet_User_CRUD UserData);
     }
 }

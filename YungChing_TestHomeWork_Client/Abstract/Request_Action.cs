@@ -12,6 +12,6 @@ namespace YungChing_TestHomeWork_Client.Abstract
     {
         public Enum_Action Action_Flow { get; set; }
         public string Content { get ; set; }
-        public abstract string Get_Reqeust_Command();
+        public abstract string Get_Reqeust_Command(DataSet_User_CRUD UserData);
     }
 }
