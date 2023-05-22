@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YungChing_TestHomeWork_Client", "YungChing_TestHomeWork_Client\YungChing_TestHomeWork_Client.csproj", "{F81CA0B4-B939-4DB6-BC59-0A4D20D1A7D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YungChing_TestHomeWork_Test", "YungChing_TestHomeWork_Test\YungChing_TestHomeWork_Test.csproj", "{033A1DDC-6C78-44CC-8BE3-2D0DBB808550}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F81CA0B4-B939-4DB6-BC59-0A4D20D1A7D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81CA0B4-B939-4DB6-BC59-0A4D20D1A7D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81CA0B4-B939-4DB6-BC59-0A4D20D1A7D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81CA0B4-B939-4DB6-BC59-0A4D20D1A7D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{033A1DDC-6C78-44CC-8BE3-2D0DBB808550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033A1DDC-6C78-44CC-8BE3-2D0DBB808550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033A1DDC-6C78-44CC-8BE3-2D0DBB808550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033A1DDC-6C78-44CC-8BE3-2D0DBB808550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BD3B43D-0F46-4EB1-BED5-35B153E26BC0}
+	EndGlobalSection
+EndGlobal
