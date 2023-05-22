@@ -15,24 +15,25 @@ namespace YungChing_TestHomeWork_Client.Model
         public string Receive_Result { get ; set ; }
         public Enum_Action Action_Flow { get; set; }
 
-        /// FeedBackMessage：{{Command} {FileName} {FileBytesBuffer}}
+        /// FeedBackMessage：{Commnad} {系統訊息}..{資料}
         public void Set_ReceiveResult(byte[] buffer)
         {
             Receive_Result = BufferToStringFormat(buffer);
         }
+
         public void Get_FileBytePack()
         {
             this.Receive_Result = this.Receive_Result.Replace("\0", "");
-            string reponse =Regex.Split(this.Receive_Result, "..FileBuffer..")[1];
+            string reponse =Regex.Split(this.Receive_Result, "..Split..")[2] ?? "";
             Result.Data_Buffer = Encoding.UTF8.GetBytes(reponse);
         }
         public string Get_FeedBackMessage()
         {
-            return this.Receive_Result.Split(' ')[1];
+            return Regex.Split(this.Receive_Result, "..Split..")[2];
         }
         public void Get_ActionFlow()
         {
-            this.Action_Flow = (Enum_Action)Enum.Parse(typeof(Enum_Action), this.Receive_Result.Split(' ')[0]);
+            this.Action_Flow = (Enum_Action)Enum.Parse(typeof(Enum_Action), Regex.Split(this.Receive_Result, "..Split..")[0]);
         }
 
         public DataSet_ExcuteResult Query_Action_Process(I_Receive_Process Process_Object)

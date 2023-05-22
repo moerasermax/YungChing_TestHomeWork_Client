@@ -49,21 +49,27 @@
             this.ConsoleLog_Groupbox = new System.Windows.Forms.GroupBox();
             this.ConsoleLog_Textbox = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.API_Send_Request = new System.Windows.Forms.TabPage();
+            this.YungChing_FunctionTest_tabPage = new System.Windows.Forms.TabPage();
+            this.Create_button = new System.Windows.Forms.Button();
             this.CommandLine_Send_Request = new System.Windows.Forms.TabPage();
             this.Notice_Label = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Send_Request_Command_Button = new System.Windows.Forms.Button();
             this.Command_Textbox = new System.Windows.Forms.TextBox();
             this.Command_Label = new System.Windows.Forms.Label();
+            this.API_Send_Request = new System.Windows.Forms.TabPage();
+            this.Delete_button = new System.Windows.Forms.Button();
+            this.Update_button = new System.Windows.Forms.Button();
+            this.Read_button = new System.Windows.Forms.Button();
             this.Client_Show_Groupbox.SuspendLayout();
             this.RequestFile_Information_Groupbox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.ConsoleLog_Groupbox.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.API_Send_Request.SuspendLayout();
+            this.YungChing_FunctionTest_tabPage.SuspendLayout();
             this.CommandLine_Send_Request.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.API_Send_Request.SuspendLayout();
             this.SuspendLayout();
             // 
             // Client_Show_Groupbox
@@ -272,25 +278,38 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.API_Send_Request);
+            this.tabControl1.Controls.Add(this.YungChing_FunctionTest_tabPage);
             this.tabControl1.Controls.Add(this.CommandLine_Send_Request);
+            this.tabControl1.Controls.Add(this.API_Send_Request);
             this.tabControl1.Location = new System.Drawing.Point(31, 101);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1694, 193);
             this.tabControl1.TabIndex = 1;
             // 
-            // API_Send_Request
+            // YungChing_FunctionTest_tabPage
             // 
-            this.API_Send_Request.Controls.Add(this.RequestFile_Information_Groupbox);
-            this.API_Send_Request.Controls.Add(this.groupBox1);
-            this.API_Send_Request.Location = new System.Drawing.Point(4, 22);
-            this.API_Send_Request.Name = "API_Send_Request";
-            this.API_Send_Request.Padding = new System.Windows.Forms.Padding(3);
-            this.API_Send_Request.Size = new System.Drawing.Size(1686, 167);
-            this.API_Send_Request.TabIndex = 0;
-            this.API_Send_Request.Text = "API_Send_Request";
-            this.API_Send_Request.UseVisualStyleBackColor = true;
+            this.YungChing_FunctionTest_tabPage.Controls.Add(this.Read_button);
+            this.YungChing_FunctionTest_tabPage.Controls.Add(this.Update_button);
+            this.YungChing_FunctionTest_tabPage.Controls.Add(this.Delete_button);
+            this.YungChing_FunctionTest_tabPage.Controls.Add(this.Create_button);
+            this.YungChing_FunctionTest_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.YungChing_FunctionTest_tabPage.Name = "YungChing_FunctionTest_tabPage";
+            this.YungChing_FunctionTest_tabPage.Size = new System.Drawing.Size(1686, 167);
+            this.YungChing_FunctionTest_tabPage.TabIndex = 2;
+            this.YungChing_FunctionTest_tabPage.Text = "YungChing_FunctionTest";
+            this.YungChing_FunctionTest_tabPage.UseVisualStyleBackColor = true;
+            // 
+            // Create_button
+            // 
+            this.Create_button.Enabled = false;
+            this.Create_button.Location = new System.Drawing.Point(71, 37);
+            this.Create_button.Name = "Create_button";
+            this.Create_button.Size = new System.Drawing.Size(154, 26);
+            this.Create_button.TabIndex = 2;
+            this.Create_button.Text = "Create";
+            this.Create_button.UseVisualStyleBackColor = true;
+            this.Create_button.Click += new System.EventHandler(this.Create_button_Click);
             // 
             // CommandLine_Send_Request
             // 
@@ -301,7 +320,7 @@
             this.CommandLine_Send_Request.Padding = new System.Windows.Forms.Padding(3);
             this.CommandLine_Send_Request.Size = new System.Drawing.Size(1686, 167);
             this.CommandLine_Send_Request.TabIndex = 1;
-            this.CommandLine_Send_Request.Text = "CommandLine_Send_Request";
+            this.CommandLine_Send_Request.Text = "CommandLine_Send_Request_NotUse";
             this.CommandLine_Send_Request.UseVisualStyleBackColor = true;
             // 
             // Notice_Label
@@ -356,6 +375,51 @@
             this.Command_Label.TabIndex = 0;
             this.Command_Label.Text = "Command：";
             // 
+            // API_Send_Request
+            // 
+            this.API_Send_Request.Controls.Add(this.RequestFile_Information_Groupbox);
+            this.API_Send_Request.Controls.Add(this.groupBox1);
+            this.API_Send_Request.Location = new System.Drawing.Point(4, 22);
+            this.API_Send_Request.Name = "API_Send_Request";
+            this.API_Send_Request.Padding = new System.Windows.Forms.Padding(3);
+            this.API_Send_Request.Size = new System.Drawing.Size(1686, 167);
+            this.API_Send_Request.TabIndex = 0;
+            this.API_Send_Request.Text = "API_Send_Request_NotUse";
+            this.API_Send_Request.UseVisualStyleBackColor = true;
+            // 
+            // Delete_button
+            // 
+            this.Delete_button.Enabled = false;
+            this.Delete_button.Location = new System.Drawing.Point(71, 80);
+            this.Delete_button.Name = "Delete_button";
+            this.Delete_button.Size = new System.Drawing.Size(154, 26);
+            this.Delete_button.TabIndex = 2;
+            this.Delete_button.Text = "Delete";
+            this.Delete_button.UseVisualStyleBackColor = true;
+            this.Delete_button.Click += new System.EventHandler(this.Delete_button_Click);
+            // 
+            // Update_button
+            // 
+            this.Update_button.Enabled = false;
+            this.Update_button.Location = new System.Drawing.Point(280, 37);
+            this.Update_button.Name = "Update_button";
+            this.Update_button.Size = new System.Drawing.Size(154, 26);
+            this.Update_button.TabIndex = 2;
+            this.Update_button.Text = "Update";
+            this.Update_button.UseVisualStyleBackColor = true;
+            this.Update_button.Click += new System.EventHandler(this.Update_button_Click);
+            // 
+            // Read_button
+            // 
+            this.Read_button.Enabled = false;
+            this.Read_button.Location = new System.Drawing.Point(280, 80);
+            this.Read_button.Name = "Read_button";
+            this.Read_button.Size = new System.Drawing.Size(154, 26);
+            this.Read_button.TabIndex = 2;
+            this.Read_button.Text = "Read";
+            this.Read_button.UseVisualStyleBackColor = true;
+            this.Read_button.Click += new System.EventHandler(this.Read_button_Click);
+            // 
             // YungChing_TestHomeWork_Client_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -375,11 +439,12 @@
             this.ConsoleLog_Groupbox.ResumeLayout(false);
             this.ConsoleLog_Groupbox.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.API_Send_Request.ResumeLayout(false);
+            this.YungChing_FunctionTest_tabPage.ResumeLayout(false);
             this.CommandLine_Send_Request.ResumeLayout(false);
             this.CommandLine_Send_Request.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.API_Send_Request.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -414,6 +479,11 @@
         private System.Windows.Forms.TextBox Command_Textbox;
         private System.Windows.Forms.Label Command_Label;
         private System.Windows.Forms.Button Default_GetFile_Request_button;
+        private System.Windows.Forms.TabPage YungChing_FunctionTest_tabPage;
+        private System.Windows.Forms.Button Create_button;
+        private System.Windows.Forms.Button Read_button;
+        private System.Windows.Forms.Button Update_button;
+        private System.Windows.Forms.Button Delete_button;
     }
 }
 

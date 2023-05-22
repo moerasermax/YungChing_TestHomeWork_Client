@@ -208,6 +208,10 @@ namespace YungChing_TestHomeWork_Client
             Send_Get_Server_FilesFolder_FilesName_Button.Enabled = true;
             Default_GetFile_Request_button.Enabled = true;
             Connect_Server_Button.Enabled = false;
+            Create_button.Enabled = true;
+            Delete_button.Enabled = true;
+            Update_button.Enabled = true;
+            Read_button.Enabled=true;
         }
         public void DisConnect_OffButton()
         {
@@ -217,6 +221,110 @@ namespace YungChing_TestHomeWork_Client
             Send_Get_Server_FilesFolder_FilesName_Button.Enabled = false;
             Default_GetFile_Request_button.Enabled = false;
             Connect_Server_Button.Enabled = true;
+            Create_button.Enabled = false;
+            Delete_button.Enabled = false;
+            Update_button.Enabled = false;
+            Read_button.Enabled = false;
+        }
+
+        private void Create_button_Click(object sender, EventArgs e)
+        {
+            DataSet_User_CRUD User_Data = new DataSet_User_CRUD()
+            {
+                Account = "YC",
+                Password = "A123456",
+                Name = "Bboy_Yc",
+                Age ="18"
+            };
+            RequestAction_CreateUser requestAction_CreateUser = new RequestAction_CreateUser();
+            requestAction_CreateUser.UserData = User_Data;
+
+            DataSet_ExcuteResult result = Client_Controller.getInstance().Request_Action(requestAction_CreateUser);
+            result = Client_Controller.getInstance().Receive_ResponseRsult();
+
+            try
+            {
+                UpdateConsoleLog_Method(string.Format("伺服器訊息：{0}", result.FeedBackMessage));
+            }
+            catch (Exception ex)
+            {
+                UpdateConsoleLog_Method(string.Format("伺服器訊息：{0}", ex.Message));
+            }
+        }
+
+        private void Delete_button_Click(object sender, EventArgs e)
+        {
+            DataSet_User_CRUD User_Data = new DataSet_User_CRUD()
+            {
+                Account = "YC",
+                Password = "A123456",
+                Name = "Bboy_Yc",
+                Age = "18"
+            };
+            RequestAction_DeleteUser requestAction_DeleteUser = new RequestAction_DeleteUser();
+            requestAction_DeleteUser.UserData = User_Data;
+
+            DataSet_ExcuteResult result = Client_Controller.getInstance().Request_Action(requestAction_DeleteUser);
+            result = Client_Controller.getInstance().Receive_ResponseRsult();
+
+            try
+            {
+                UpdateConsoleLog_Method(string.Format("伺服器訊息：{0}", result.FeedBackMessage));
+            }
+            catch (Exception ex)
+            {
+                UpdateConsoleLog_Method(string.Format("伺服器訊息：{0}", ex.Message));
+            }
+        }
+
+        private void Update_button_Click(object sender, EventArgs e)
+        {
+            DataSet_User_CRUD User_Data = new DataSet_User_CRUD()
+            {
+                Account = "YC",
+                Password = "A123456",
+                Name = "Bboy_Yc",
+                Age = "18"
+            };
+            RequestAction_UpdateUser requestAction_UpdateUser = new RequestAction_UpdateUser();
+            requestAction_UpdateUser.UserData = User_Data;
+
+            DataSet_ExcuteResult result = Client_Controller.getInstance().Request_Action(requestAction_UpdateUser);
+            result = Client_Controller.getInstance().Receive_ResponseRsult();
+
+            try
+            {
+                UpdateConsoleLog_Method(string.Format("伺服器訊息：{0}", result.FeedBackMessage));
+            }
+            catch (Exception ex)
+            {
+                UpdateConsoleLog_Method(string.Format("伺服器訊息：{0}", ex.Message));
+            }
+        }
+
+        private void Read_button_Click(object sender, EventArgs e)
+        {
+            DataSet_User_CRUD User_Data = new DataSet_User_CRUD()
+            {
+                Account = "YC",
+                Password = "A123456",
+                Name = "Bboy_Yc",
+                Age = "26"
+            };
+            RequestAction_ReadUser requestAction_ReadUser = new RequestAction_ReadUser();
+            requestAction_ReadUser.UserData = User_Data;
+
+            DataSet_ExcuteResult result = Client_Controller.getInstance().Request_Action(requestAction_ReadUser);
+            result = Client_Controller.getInstance().Receive_ResponseRsult();
+
+            try
+            {
+                UpdateConsoleLog_Method(string.Format("伺服器訊息：{0}", result.FeedBackMessage));
+            }
+            catch (Exception ex)
+            {
+                UpdateConsoleLog_Method(string.Format("伺服器訊息：{0}", ex.Message));
+            }
         }
     }
 }

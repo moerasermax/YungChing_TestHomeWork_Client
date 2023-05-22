@@ -134,13 +134,13 @@ namespace YungChing_TestHomeWork_Client.Controller
             switch (Deserialization_Result.getInstance().Action_Flow)
             {
                 case Enum_Action.CREATEUSER:
-                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_ReadUser());
+                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_CreateUser());
                 case Enum_Action.DELETEUSER:
-                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_UpdateUser());
+                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_DeleteUser());
                 case Enum_Action.READUSER:
-                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_CreateUser());
+                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_ReadUser());
                 case Enum_Action.UPDATEUSER:
-                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_CreateUser());
+                    return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_UpdateUser());
                 default:
                     result.Success = false;
                     result.FeedBackMessage = "Can't find Action_Flow";
