@@ -50,6 +50,7 @@
     <Compile Include="Abstract\Request_Action.cs" />
     <Compile Include="Controller\Client_Controller.cs" />
     <Compile Include="DataSet\DataSet_ExcuteResult.cs" />
+    <Compile Include="DataSet\DataSet_User_CRUD.cs" />
     <Compile Include="DataSet\Enum_Action.cs" />
     <Compile Include="Model\ReceiveProcess_DeleteUser.cs" />
     <Compile Include="Model\ReceiveProcess_ReadUser.cs" />
