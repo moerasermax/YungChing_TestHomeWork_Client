@@ -8,7 +8,7 @@ using YungChing_TestHomeWork_Client.Controller;
 
 namespace YungChing_TestHomeWork_Client.Model
 {
-    public class RequestAction_CloseConnect : Request_Action
+    public class RequestAction_CreateUser : Request_Action
     {
         
         public override string Get_Reqeust_Command()

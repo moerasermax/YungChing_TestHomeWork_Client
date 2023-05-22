@@ -130,7 +130,7 @@ namespace YungChing_TestHomeWork_Client.Controller
             DataSet_ExcuteResult result = new DataSet_ExcuteResult();
             switch (Deserialization_Result.getInstance().Action_Flow)
             {
-                case Enum_Action.ADDUSER:
+                case Enum_Action.CREATEUSER:
                     return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_GetFilesInCurrentFolder());
                 case Enum_Action.REMOVEUSER:
                     return Deserialization_Result.getInstance().Query_Action_Process(new ReceiveProcess_DownloadFile());

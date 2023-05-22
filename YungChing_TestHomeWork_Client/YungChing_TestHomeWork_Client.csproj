@@ -65,7 +65,7 @@
     <Compile Include="Model\ReceiveProcess_CloseConnect.cs" />
     <Compile Include="Model\ReceiveProcess_DownloadFile.cs" />
     <Compile Include="Model\ReceiveProcess_GetFilesInCurrentFolder.cs" />
-    <Compile Include="Model\RequestAction_CloseConnect.cs" />
+    <Compile Include="Model\RequestAction_CreateUser.cs" />
     <Compile Include="Model\RequestAction_DownloadFile.cs" />
     <Compile Include="Model\RequestAction_GetServerFilesFolderFilesName.cs" />
     <Compile Include="Model\Request.cs" />

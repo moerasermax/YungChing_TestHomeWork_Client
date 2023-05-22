@@ -40,7 +40,7 @@ namespace YungChing_TestHomeWork_Client.Model
             DataSet_ExcuteResult result = new DataSet_ExcuteResult();
             switch (this.Action_Flow)
             {
-                case Enum_Action.ADDUSER:
+                case Enum_Action.CREATEUSER:
                     Process_Object.FileBytesbuffer = Result.Data_Buffer;
                     return Process_Object.Excute_Specific_Method();
                 case Enum_Action.REMOVEUSER:

@@ -16,7 +16,7 @@ namespace YungChing_TestHomeWork_Client_Test
             Client_Controller client = Client_Controller.getInstance();
             client.SetConnectObject("127.0.0.1", 66666);
             client.SetConnectObject("127.0.0.1", 5050);
-            client.Request_Action(new RequestAction_CloseConnect());
+            client.Request_Action(new RequestAction_CreateUser());
             client.Refresh();
         }
         [TestMethod]
@@ -25,7 +25,7 @@ namespace YungChing_TestHomeWork_Client_Test
             Client_Controller client = Client_Controller.getInstance();
             client.Request_Action(new RequestAction_GetServerFilesFolderFilesName());
             client.Request_Action(new RequestAction_DownloadFile());
-            client.Request_Action(new RequestAction_CloseConnect());
+            client.Request_Action(new RequestAction_CreateUser());
             client.Refresh();
         }
 
@@ -42,7 +42,7 @@ namespace YungChing_TestHomeWork_Client_Test
         {
             Client_Controller client = Client_Controller.getInstance();
             client.SetConnectObject("127.0.0.1", 5050);
-            client.Request_Action(new RequestAction_CloseConnect());
+            client.Request_Action(new RequestAction_CreateUser());
             client.Receive_ResponseRsult();
             client.Request_Action(new RequestAction_GetServerFilesFolderFilesName());
             client.Receive_ResponseRsult();
@@ -74,7 +74,7 @@ namespace YungChing_TestHomeWork_Client_Test
         {
             Client_Controller client = Client_Controller.getInstance();
             client.SetConnectObject("127.0.0.1", 5050);
-            client.Request_Action(new RequestAction_CloseConnect());
+            client.Request_Action(new RequestAction_CreateUser());
             client.Receive_ResponseRsult();
             client.Refresh();
         }

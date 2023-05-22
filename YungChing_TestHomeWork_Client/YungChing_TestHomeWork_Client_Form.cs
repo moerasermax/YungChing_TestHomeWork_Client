@@ -44,7 +44,7 @@ namespace YungChing_TestHomeWork_Client
             DataSet_ExcuteResult result = new DataSet_ExcuteResult();
             try
             {
-                result = Client_Controller.getInstance().Request_Action(new RequestAction_CloseConnect());
+                result = Client_Controller.getInstance().Request_Action(new RequestAction_CreateUser());
 
                 if (result.Success)
                 {
