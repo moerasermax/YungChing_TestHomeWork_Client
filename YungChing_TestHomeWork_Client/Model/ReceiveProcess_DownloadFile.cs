@@ -15,6 +15,7 @@ namespace YungChing_TestHomeWork_Client.Model
     {
         public override DataSet_ExcuteResult Excute_Specific_Method()
         {
+            throw (new NotImplementedException());
 
         }
     }

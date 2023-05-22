@@ -11,6 +11,7 @@ namespace YungChing_TestHomeWork_Client.Model
     {
         public override string Get_Reqeust_Command()
         {
+            throw(new NotImplementedException());
         }
     }
 }

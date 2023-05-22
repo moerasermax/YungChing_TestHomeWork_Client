@@ -12,6 +12,8 @@ namespace YungChing_TestHomeWork_Client.Model
         
         public override string Get_Reqeust_Command()
         {
+            throw (new NotImplementedException());
+
         }
         public RequestAction_DownloadFile(string content = "test.txt") /// 設定初始值
         {
