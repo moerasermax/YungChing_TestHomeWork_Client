@@ -10,7 +10,7 @@ namespace YungChing_TestHomeWork_Client.Model
 {
     public class ReceiveProcess_CreateUser : Receive_Process
     {
-        public override DataSet_ExcuteResult Excute_Specific_Method(DataSet_User_CRUD UserData)
+        public override DataSet_ExcuteResult Excute_Specific_Method()
         {
             throw new Exception();
         }

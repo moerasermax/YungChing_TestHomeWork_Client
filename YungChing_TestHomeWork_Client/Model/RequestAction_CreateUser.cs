@@ -13,10 +13,18 @@ namespace YungChing_TestHomeWork_Client.Model
     public class RequestAction_CreateUser : Request_Action
     {
         
-        public override string Get_Reqeust_Command(DataSet_User_CRUD UserData)
+        public override string Get_Reqeust_Command()
         {
-            Action_Flow = Enum_Action.CREATEUSER;
-            return string.Format("{0}..Split..{1}..Split..{2}", Enum_Action.CREATEUSER, "INSERT INTO [YungChing_TestHomework].[dbo].[User] VALUES(@Account,@Password,@Name,@Age);", JsonConvert.SerializeObject(UserData));
+            if(UserData != null)
+            {
+                Action_Flow = Enum_Action.CREATEUSER;
+                return string.Format("{0}..Split..{1}..Split..{2}", Enum_Action.CREATEUSER, "INSERT INTO [YungChing_TestHomework].[dbo].[User] VALUES(@Account,@Password,@Name,@Age);", JsonConvert.SerializeObject(UserData));
+            }
+            else
+            {
+                throw new Exception("請設置 UserData");
+            }
+
         }
     }
 }

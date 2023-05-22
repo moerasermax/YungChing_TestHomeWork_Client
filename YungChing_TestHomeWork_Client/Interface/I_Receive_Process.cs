@@ -11,6 +11,7 @@ namespace YungChing_TestHomeWork_Client.Interface
     {
         string FeedBackMessage { get; set; }
         byte[] FileBytesbuffer { get; set; }
-        DataSet_ExcuteResult Excute_Specific_Method(DataSet_User_CRUD UserData);
+        DataSet_User_CRUD UserData { get; set; }
+        DataSet_ExcuteResult Excute_Specific_Method();
     }
 }
